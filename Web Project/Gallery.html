@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <link rel="stylesheet" type="text/css" href="Gallery.css">
+    <script src="https://kit.fontawesome.com/d599f53265.js" crossorigin="anonymous"></script>
+
+    <style>
+        img {
+            text-align: left;
+        }
+
+
+        h1 {
+            text-align: center;
+            text-decoration: underline aqua;
+        }
+
+
+        h2 {
+            text-align: center;
+            text-decoration: underline aqua;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        Img {
+            border: 2px solid black;
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+
+    <Div class="Header">
+        <div class="Logo">
+            <img src="Images/Freedom to everyone.jpg" alt="Logo" width="200" height="150">
+        </div>
+        <div class="slogan">
+            <h1>Technology to everyone</h1>
+            <h2>Gallery</h2>
+            <p id="date"></p>
+            <script>
+                const d = new Date();
+                document.getElementById("date").innerHTML = d;
+            </script>
+        </div>
+    </Div>
+
+
+    <div class="Topnav">
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact.html">Contact us</a>
+            <a href="About.html">About</a>
+            <a href="Survey.html">Survey</a>
+        </nav>
+
+    </div>
+
+
+    <div class="Middle">
+        <h3>~Images~</h3>
+        <h4>Dear reader, Your digital divide qoute is...</h4>
+        <div id="QouteContainer">
+            <button id="btnQoute">Click here for new Quote</button>
+            <div id="outputQoute">Qoute is...</div>
+        </div>
+        <br>
+        <img src="Images/Image1.jpg" alt="Image1" width="400" height="400" alt="Gallery display image 1">
+        <!--https://grocotts.ru.ac.za/2021/11/04/digital-divide-narrows-as-22-local-schools-get-wi-fi-thanks-to-local-tech-company/-->
+        <img src="Images/Image2.jpg" alt="Image2" width="400" height="400" alt="Gallery display image 2">
+        <!--https://www.avnation.tv/2020/08/07/bridging-the-digital-divide-with-social-activism-in-av/-->
+        <img src="Images/Image3.jpg" alt="Image3" width="400" height="400"alt="Gallery display image 3" >
+        <!--https://www.newagebd.net/article/135620/digital-bangladesh-digital-divide-and-education-sector-->
+        <img src="Images/Image4.jpg" alt="Image4" width="400" height="400" alt="Gallery display image 4">
+        <!--https://www.bloomberg.com/news/features/2020-05-06/in-lockdown-seniors-are-becoming-more-tech-savvy-->
+        <img src="Images/Image5.png" alt="Image5" width="400" height="400" alt="Gallery display image 5">
+        <!--https://www.learning.com/blog/closing-the-digital-divide/ -->
+        <img src="Images/Image6.png" alt="Image6" width="400" height="400"alt="Gallery display image 6" >
+        <!--https://www.the74million.org/article/report-internet-gap-snubs-la-low-income-residents-widens-digital-divide/-->
+        <img src="Images/Image7.jpeg" alt="Image7" width="400" height="400" alt="Gallery display image 7">
+        <!--https://ally.tech/bridging-the-digital-divide-driving-towards-digital-equity-inclusion-for-all-fb519aaaca0a-->
+        <img src="Images/Image8.jpg" alt="Image8" width="400" height="400" alt="Gallery display image 8">
+        <!--https://www.ageing.ox.ac.uk/blog/digital-divide-->
+        <img src="Images/Image9.jpg" alt="Image9" width="400" height="400" alt="Gallery display image 9">
+        <!--https://www.rebdones.com/uncategorized/the-digital-divide/ -->
+
+
+    </div>
+
+    <div class="Middle2">
+
+
+
+    </div>
+
+
+    <div class="Footer">
+        <img src="Images/Technology to everyone.jpg" alt="Slogan" width="200" height="200">
+        <br>
+        <Label id="Newsletter1" for="Newsletter">Please send me your weekly newsletter?</Label>
+        <br>
+        <Label style="position: relative; bottom: 30px";>Enter email :</Label>
+        <input id="Newsletter2" type="text" required>
+        <br>
+        <button id="BtnNewsletter" type="button" onclick= "getInputValue(); alert('You will receive our weekly newsletters on the email entered in below!')";>Sign up for weekly newsletter</button>
+        <script>
+            function getInputValue(){
+            var inputValEmailNews = document.getElementById("Newsletter2").value='';  
+            }
+        </script>
+        <br>
+        <div class="Icons3">
+            <a href="https://www.facebook.com/NIKHIL.RAJKUMAR177?mibextid=ZbWKwL"><i class="fa-brands fa-facebook fa-2xl" style="color: #009dff;" alt="Facebook logo"></i></a>
+            <a href="https://instagram.com/x_nikhil.r?igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram fa-2xl" style="color: #fb00ff;" alt="Intsagram logo"></i></a>
+            <a href="https://www.youtube.com/watch?v=aMi3ky04XqY&ab_channel=Freethink"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;" alt="Youtube logo"></i></a>
+            <a href="https://twitter.com/elonmusk/with_replies"><i class="fa-brands fa-twitter fa-2xl" style="color: #00bceb;" alt="Twitter logo"></i></a>
+        </div>
+        <p>Everyone online is a Non-Profit organisation</p>
+        <p>@Everyone Online Copyright 2023</p>
+        <p>http://127.0.0.1:5500/Gallery.html</p>
+
+<script src="Gallery.js"></script>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
